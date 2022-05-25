@@ -1,24 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="A1_A2_iOS_Namrata_C0853345" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q6l-c3-6QZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="FSX-ru-N5T">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbi-Ml-w2h">
+                                <rect key="frame" x="304" y="752" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="GLa-hE-ShS"/>
+                                    <constraint firstAttribute="height" constant="100" id="U7E-Qp-IYb"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="location-arrow"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kgp-pq-Rhc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kgp-pq-Rhc" firstAttribute="trailing" secondItem="FSX-ru-N5T" secondAttribute="trailing" id="6zx-1p-IrY"/>
+                            <constraint firstItem="FSX-ru-N5T" firstAttribute="top" secondItem="kgp-pq-Rhc" secondAttribute="top" id="CVl-NI-jlz"/>
+                            <constraint firstItem="FSX-ru-N5T" firstAttribute="leading" secondItem="kgp-pq-Rhc" secondAttribute="leading" id="I7w-05-Q1k"/>
+                            <constraint firstAttribute="trailing" secondItem="fbi-Ml-w2h" secondAttribute="trailing" constant="10" id="fFM-Cf-f7k"/>
+                            <constraint firstItem="kgp-pq-Rhc" firstAttribute="bottom" secondItem="fbi-Ml-w2h" secondAttribute="bottom" constant="10" id="pf3-mV-WNi"/>
+                            <constraint firstAttribute="bottom" secondItem="FSX-ru-N5T" secondAttribute="bottom" id="sYA-us-0Dm"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="locationViewMap" destination="FSX-ru-N5T" id="61g-6I-L0l"/>
+                        <outlet property="positionButton" destination="fbi-Ml-w2h" id="o3X-B4-aZR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="20" y="98"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="location-arrow" width="512" height="512"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

@@ -16,6 +16,7 @@
 		471BAFAC283DDAFD008FAA8F /* A1_A2_iOS_Namrata_C0853345Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471BAFAB283DDAFD008FAA8F /* A1_A2_iOS_Namrata_C0853345Tests.swift */; };
 		471BAFB6283DDAFE008FAA8F /* A1_A2_iOS_Namrata_C0853345UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471BAFB5283DDAFE008FAA8F /* A1_A2_iOS_Namrata_C0853345UITests.swift */; };
 		471BAFB8283DDAFE008FAA8F /* A1_A2_iOS_Namrata_C0853345UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471BAFB7283DDAFE008FAA8F /* A1_A2_iOS_Namrata_C0853345UITestsLaunchTests.swift */; };
+		471BAFC5283DDB72008FAA8F /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471BAFC4283DDB72008FAA8F /* Place.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,12 +44,13 @@
 		471BAF9B283DDAFD008FAA8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		471BAF9D283DDAFD008FAA8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		471BAFA0283DDAFD008FAA8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		471BAFA2283DDAFD008FAA8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		471BAFA7283DDAFD008FAA8F /* A1_A2_iOS_Namrata_C0853345Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = A1_A2_iOS_Namrata_C0853345Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		471BAFAB283DDAFD008FAA8F /* A1_A2_iOS_Namrata_C0853345Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A1_A2_iOS_Namrata_C0853345Tests.swift; sourceTree = "<group>"; };
 		471BAFB1283DDAFE008FAA8F /* A1_A2_iOS_Namrata_C0853345UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = A1_A2_iOS_Namrata_C0853345UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		471BAFB5283DDAFE008FAA8F /* A1_A2_iOS_Namrata_C0853345UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A1_A2_iOS_Namrata_C0853345UITests.swift; sourceTree = "<group>"; };
 		471BAFB7283DDAFE008FAA8F /* A1_A2_iOS_Namrata_C0853345UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A1_A2_iOS_Namrata_C0853345UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		471BAFC4283DDB72008FAA8F /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		471BAFC6283DDB80008FAA8F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +107,8 @@
 				471BAF9A283DDAFD008FAA8F /* Main.storyboard */,
 				471BAF9D283DDAFD008FAA8F /* Assets.xcassets */,
 				471BAF9F283DDAFD008FAA8F /* LaunchScreen.storyboard */,
-				471BAFA2283DDAFD008FAA8F /* Info.plist */,
+				471BAFC4283DDB72008FAA8F /* Place.swift */,
+				471BAFC6283DDB80008FAA8F /* Info.plist */,
 			);
 			path = A1_A2_iOS_Namrata_C0853345;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				471BAF99283DDAFD008FAA8F /* ViewController.swift in Sources */,
 				471BAF95283DDAFC008FAA8F /* AppDelegate.swift in Sources */,
 				471BAF97283DDAFD008FAA8F /* SceneDelegate.swift in Sources */,
+				471BAFC5283DDB72008FAA8F /* Place.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
